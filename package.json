@@ -1,6 +1,7 @@
 {
     "homepage": "https://jt-papa.github.io/Portfolio_Vanilla",
     "devDependencies": {
-        "gh-pages": "^4.0.0"
+        "gh-pages": "^4.0.0",
+        "deploy": "gh-pages -d build"
     }
 }
