@@ -1,3 +1,6 @@
 {
-    "homepage": "https://jt-papa.github.io/Portfolio_Vanilla"
+    "homepage": "https://jt-papa.github.io/Portfolio_Vanilla",
+    "dependencies": {
+        "gh-pages": "^4.0.0"
+    }
 }
