@@ -9,6 +9,11 @@ html * {
     font-family: 'Founders Grotesk', sans-serif;
   }
 
+header {
+  margin-left: 75px;
+  position:fixed;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -88,10 +93,6 @@ html * {
 
   footer div {
     margin-left: 40px;
-  }
-
-  hr {
-    
   }
 
   .rainbow
