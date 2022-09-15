@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../fonts/FoundersGrotesk-Regular.woff') format('woff');
+}
+
+html * {
+    font-family: 'Founders Grotesk', sans-serif;
+  }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+  margin-top: 60px;
+  width: 50rem
+}
+
+.intro {
+    position: relative;
+    display: block;
+    overflow: visible;
+    height: 100vh;
+    padding-top: 71px;
+}
+
+.bold-text {
+  position: relative;
+    z-index: 3;
+    width: 752px;
+    color: black;
+    font-size: 50px;
+    line-height: 56px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+.intro p {
+  font-size: 28px;
+  color: black
+}
+
+.intro button {
+  background-color: white;
+  border-color: black;
+  border-radius: 25px;
+  height: 40px;
+  text-align: center;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 44px;
+    color: black;
+    margin-left: 50px; 
+    margin-top: 150px;
+    margin-bottom: 25rem;
+    position: fixed; 
+    top: 0;
+  }
+  
+.sidebar div {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); 
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    font-size: 18px;
+  }
+
+  footer{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+
+  }
+
+  footer p {
+    font-size: 28px;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-top: 36px;
+  }
+
+  footer div {
+    margin-left: 40px;
+  }
