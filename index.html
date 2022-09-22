@@ -1,12 +1,14 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="css/styles.css" >
+    <link rel="import" href="/pages/work.html" >
     <script src="https://kit.fontawesome.com/cb50d05298.js" crossorigin="anonymous"></script>
 </head>
 <body className='font-link'>
 
+    <script src="index.js" type="module"></script>
+    
     <header>Tyler Papa</header>
     <!-- stylize the header to look like logo -->
 
@@ -14,21 +16,46 @@
         <div class="intro">
             <h1 class="bold-text">Tyler is a UX designer and web developer who loves to craft a good story.</h1>
             <p>I do digital design, brand design, and develop user interfaces. Currently I lead user interface design at Uptime Solutions in Austin, TX.</p>
-            <!-- <i class="fa-brands fa-linkedin"></i> -->
             <button class="rainbow">RESUME</button>  
         </div>
     </segment>
-<!-- this is a comment -->
+
     <nav class="sidebar">
         <ul>
-            <i class="fa-solid fa-house"></i>
-            <div>About</div>
+            <a href="../index.html" ><i class="fa-solid fa-house"></i></a>
+            <a><div>About</div></a>
             <div>Design</div>
-            <div>Development</div>
-            <div>Contact</div>
+            <div>Develop</div>
+            <a class='no-style' href="/pages/Skills.html"><div>Skills</div></a>
             <i class="fa-solid fa-circle-half-stroke"></i>
         </ul>
     </nav>
+    
+    <!-- Work Section -->
+
+    <div class="work-space">
+        <p>Explore My Work</p>
+            <ul>
+                <div>
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <div style="margin-left: 7px">Design</div>
+                </div>
+                <div style='margin-left: 20px'>
+                    <i class="fa-solid fa-code"></i>
+                    <div style="margin-left: 7px">Develop</div>
+                </div>
+            </ul>
+    </div>
+    <div class="project">
+        <h2>Black Fret</h2>
+        <p>Connecting patrons of local music</p>
+    </div>
+    <div class="project">
+        <h2>Unleashed</h2> 
+        <p>Minimizing machinery downtime</p>
+    </div>
+    
+
 
     <hr style="margin-left: 19%"></hr>
 

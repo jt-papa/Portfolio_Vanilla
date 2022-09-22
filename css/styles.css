@@ -9,6 +9,10 @@ html * {
     font-family: 'Founders Grotesk', sans-serif;
   }
 
+.no-style {
+  text-decoration: none;
+}
+
 header {
   margin-left: 75px;
   position:fixed;
@@ -18,7 +22,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 20%;
+  left: 23%;
   margin-top: 10px;
   width: 50rem
 }
@@ -27,7 +31,7 @@ header {
     position: relative;
     display: block;
     overflow: visible;
-    height: 100vh;
+    height: 60vh;
     padding-top: 71px;
 }
 
@@ -54,6 +58,7 @@ header {
     flex-direction: column; 
     align-items: center;
     width: 44px;
+    height: 100%;
     color: black;
     margin-left: 50px; 
     margin-top: 100px;
@@ -70,13 +75,18 @@ header {
     font-size: 22px;
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .sidebar a {
+    color:black;
   }
 
   footer{
     height: 200px;
     display: flex;
     flex-direction: row;
-    margin-left: 20%;
+    margin-left: 23%;
 
   }
 
@@ -95,8 +105,8 @@ header {
     margin-left: 40px;
   }
 
-  .rainbow
-  { border-radius: 100rem;
+  .rainbow{ 
+    border-radius: 100rem;
     padding: 1rem;
     font-size: 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'roboto', sans-serif;
@@ -110,4 +120,135 @@ header {
     box-shadow: 2px 1000px 1px #fff inset;
     text-align: center;
   }
+
+  .rainbow2{ 
+    border-radius: 100rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'roboto', sans-serif;
+    padding: .5rem 3rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #FF8900);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .rainbow3{ 
+    border-radius: 100rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'roboto', sans-serif;
+    padding: .5rem 3rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #80FF00, #0000FF);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .work-space {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    position: relative;
+    left: 23%; 
+  }
+
+  .work-space p {
+    font-size: 28px;
+    color: black
+  }
+
+  .work-space ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 0px;
+  }
+
+  .work-space div {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    cursor: pointer;
+    color: gray;
+    min-height: 50px;
+  }
+
+  .project {
+    width: 35%;
+    border-top: 1px solid rgb(66, 66, 66);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 23%;
+    height: 200px;
+  }
   
+  .project h2 {
+    font-size: 28px;
+    color: #666666;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    left: 23%;
+  }
+
+  .project p {
+    font-size: 18px;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 420px;
+    gap: 0px 90px;
+    margin-bottom: 100px;
+    margin-left: 23%;
+    width: 930px;
+    column-count: 2;
+    column-rule: 1px solid;
+  }
+
+  .skills-header {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: normal;
+    position: relative;
+    left: 23%; 
+    margin-top: 100px;
+  }
+
+  .about-grid h3 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .skills-copy {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  #bullet {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+
+  #grid-item-UX {
+    grid-column: 1;
+  }
+
+  #grid-item-Dev {
+    grid-column: 2;
+  }
