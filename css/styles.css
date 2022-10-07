@@ -66,6 +66,16 @@ header {
     position: fixed; 
     top: 0;
   }
+
+  .sidebar .active a{
+    padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid #337ab7;
+  }
+  
+  .sidebar .active a:hover{
+    border-bottom: 1px solid #23527c;
+  }
   
 .sidebar div {
     writing-mode: vertical-rl;
@@ -76,7 +86,32 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+    background-image: linear-gradient(rgb(255, 200, 0) 2px, rgb(229, 117, 234) 53%, rgb(0, 255, 53));
+    background-size: 8% 0%;
   }
+
+  /* .sidebar div:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(255, 200, 0) 2px, rgb(229, 117, 234) 53%, rgb(0, 255, 53));
+    transform-origin: top left;
+    transition: transform 0.25s ease-out;
+    background-repeat: no-repeat;
+    background-size: 8% 0%;
+    transition: background-size 0.5s ease 0s;
+    padding-left: 5px;
+  }
+  
+  .sidebar div:hover:after {
+    transform: scaleX(1);
+    transform-origin: top left;
+  } */
+
 
   .sidebar a {
     color:black;
@@ -107,10 +142,8 @@ header {
 
   .rainbow{ 
     border-radius: 100rem;
-    padding: 1rem;
     font-size: 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'roboto', sans-serif;
-    padding: .5rem 3rem;
     color: black;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
@@ -119,14 +152,14 @@ header {
     background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px #fff inset;
     text-align: center;
+    width: 180px;
+    height: 44px;
   }
 
   .rainbow2{ 
     border-radius: 100rem;
-    padding: 1rem;
     font-size: 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'roboto', sans-serif;
-    padding: .5rem 3rem;
     color: black;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
@@ -136,14 +169,14 @@ header {
     box-shadow: 2px 1000px 1px #fff inset;
     text-align: center;
     margin-top: 30px;
+    width: 180px;
+    height: 44px;
   }
 
   .rainbow3{ 
     border-radius: 100rem;
-    padding: 1rem;
     font-size: 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'roboto', sans-serif;
-    padding: .5rem 3rem;
     color: black;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
@@ -153,6 +186,8 @@ header {
     box-shadow: 2px 1000px 1px #fff inset;
     text-align: center;
     margin-top: 30px;
+    width: 180px;
+    height: 44px;
   }
 
   .work-space {
@@ -192,19 +227,38 @@ header {
     flex-direction: column;
     justify-content: center;
     left: 23%;
-    height: 200px;
+    height: 180px;
+  }
+
+  .project:hover h2 {
+    /* content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca; */
+    /* transform-origin: bottom right;
+    transition: transform 0.25s ease-out; */
+    color: #af0000;
+  }
+  
+  .project:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
   
   .project h2 {
-    font-size: 28px;
-    color: #666666;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-size: 60px;
+    color: #444444;
+    margin-bottom: 0px;
+    margin-top: 20px;
     left: 23%;
   }
 
   .project p {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .about-grid {
@@ -236,6 +290,7 @@ header {
   .skills-copy {
     font-size: 18px;
     margin-bottom: 20px;
+    line-height: 22px;
   }
 
   #bullet {
